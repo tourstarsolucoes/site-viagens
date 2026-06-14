@@ -1,50 +1,88 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#0f172a,#1e3a8a);
-    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 
-    min-height: 100vh;
+    background:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.55)
+    ),
+    url("assets/fundo.jpg");
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
-    text-align: center;
-    padding: 20px;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
 }
 
 .container{
-    max-width: 700px;
+    width:90%;
+    max-width:850px;
+
+    background:rgba(0,0,0,.45);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:0 0 25px rgba(0,0,0,.4);
 }
 
 h1{
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size:4rem;
+    margin-bottom:20px;
 }
 
-p{
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
+.subtitulo{
+    font-size:1.5rem;
+    margin-bottom:15px;
+}
+
+.descricao{
+    margin-bottom:30px;
+    font-size:1.1rem;
 }
 
 .contato{
-    margin-top: 30px;
-    padding: 20px;
+    background:rgba(255,255,255,.08);
 
-    background: rgba(255,255,255,0.1);
+    border-radius:15px;
 
-    border-radius: 12px;
-
-    backdrop-filter: blur(5px);
+    padding:25px;
 }
 
 .contato h2{
-    margin-bottom: 15px;
+    margin-bottom:15px;
+}
+
+.contato p{
+    margin:10px 0;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2.5rem;
+    }
+
+    .container{
+        padding:30px;
+    }
+
 }
